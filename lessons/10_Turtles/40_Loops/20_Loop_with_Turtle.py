@@ -11,11 +11,17 @@ turtle.setup(600,600,0,0)               # Set the size of the window
 tina = turtle.Turtle()                  # Create a turtle named tina
 
 tina.shape('turtle')                    # Set the shape of the turtle to a turtle
-tina.speed(2)                           # Make the turtle move as fast, but not too fast. 
+tina.speed(999999999)                           # Make the turtle move as fast, but not too fast. 
 
-for i in range(4):
+for i in range(229):
     tina.forward(150)                      # Move tina forward by the forward distance
-    tina.left(90)                           # Turn tina left by the left turn
+    tina.left(65)  
+    tina.penup()
+    tina.goto(50,50)
+    tina.pendown()
+    for a in range(229):
+        tina.forward(40)
+        tina.left(65)                        # Turn tina left by the left turn
  # Continue the last two steps three more times   # to draw a square
 
 
